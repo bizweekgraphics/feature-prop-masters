@@ -294,6 +294,14 @@ header {
 }
 
 /* line 32, ../scss/_main.scss */
+.caption {
+  font-size: 0.8em;
+  color: rgba(60, 60, 60, 0.6);
+  text-align: right;
+  margin-right: 0.325em;
+}
+
+/* line 39, ../scss/_main.scss */
 blockquote {
   font-size: 0.9em;
   margin: 2em 0;
@@ -302,17 +310,17 @@ blockquote {
   border-bottom: 1px solid #eee;
   background-color: rgba(60, 60, 60, 0.1);
 }
-/* line 45, ../scss/_main.scss */
+/* line 52, ../scss/_main.scss */
 blockquote p:last-of-type {
   margin: 0;
 }
 
-/* line 50, ../scss/_main.scss */
+/* line 57, ../scss/_main.scss */
 ul {
   margin-bottom: 2em;
 }
 
-/* line 54, ../scss/_main.scss */
+/* line 61, ../scss/_main.scss */
 li {
   margin-bottom: 0.5em;
 }
