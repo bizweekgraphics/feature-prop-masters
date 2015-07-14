@@ -211,7 +211,6 @@ h6 {
   font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
   line-height: 1.2;
   margin: 0 0 0.8125em;
-  font-weight: normal;
 }
 
 /* line 24, ../scss/base/_typography.scss */
@@ -219,34 +218,37 @@ h1 {
   font-size: 4rem;
   line-height: 1.1em;
   margin-bottom: 0.1em;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(60, 60, 60, 0.3);
+  display: inline;
 }
 
-/* line 35, ../scss/base/_typography.scss */
+/* line 38, ../scss/base/_typography.scss */
 p {
   margin: 0 0 1.625em;
 }
 
-/* line 39, ../scss/base/_typography.scss */
+/* line 42, ../scss/base/_typography.scss */
 em {
   font-family: "TiemposTextWeb-RegularItalic", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
 }
 
-/* line 43, ../scss/base/_typography.scss */
+/* line 46, ../scss/base/_typography.scss */
 a {
   color: #2B00F7;
   text-decoration: underline;
   transition: color 0.1s linear;
 }
-/* line 49, ../scss/base/_typography.scss */
+/* line 52, ../scss/base/_typography.scss */
 a:active, a:focus, a:hover {
   color: #1e00ab;
 }
-/* line 55, ../scss/base/_typography.scss */
+/* line 58, ../scss/base/_typography.scss */
 a:active, a:focus {
   outline: none;
 }
 
-/* line 61, ../scss/base/_typography.scss */
+/* line 64, ../scss/base/_typography.scss */
 hr {
   border-bottom: 1px solid #ddd;
   border-left: none;
@@ -255,7 +257,7 @@ hr {
   margin: 1.625em 0;
 }
 
-/* line 69, ../scss/base/_typography.scss */
+/* line 72, ../scss/base/_typography.scss */
 img,
 picture {
   margin: 0 auto;
@@ -277,23 +279,42 @@ Primary style
 /* line 13, ../scss/_main.scss */
 #main .lede {
   width: 100%;
+  position: relative;
+  margin-bottom: 1em;
 }
 
-/* line 18, ../scss/_main.scss */
+/* line 20, ../scss/_main.scss */
 header {
   margin: 0 auto 2em;
-  max-width: 580px;
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+  z-index: 1000;
+  text-align: right;
+  width: 40%;
 }
 
-/* line 23, ../scss/_main.scss */
+/* line 32, ../scss/_main.scss */
+video {
+  width: 100%;
+}
+
+/* line 36, ../scss/_main.scss */
+.video {
+  width: 100%;
+  margin-bottom: 2em;
+  background-color: pink;
+  height: 460px;
+}
+
+/* line 43, ../scss/_main.scss */
 .lede-img {
   width: 100%;
-  background: url("../img/2012_MCDHOBB_EC019_H.jpg") no-repeat 0 30%;
   background-size: cover;
   min-height: 450px;
 }
 
-/* line 32, ../scss/_main.scss */
+/* line 52, ../scss/_main.scss */
 .caption {
   font-size: 0.7em;
   font-family: "NHaasGroteskDSPro-55Rg", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
@@ -302,28 +323,42 @@ header {
   margin-right: 0.325em;
 }
 
-/* line 40, ../scss/_main.scss */
+/* line 60, ../scss/_main.scss */
 blockquote {
   font-size: 0.9em;
   margin: 2em 0;
   padding: 2em;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  background-color: rgba(60, 60, 60, 0.1);
+  background-color: rgba(60, 60, 60, 0.05);
 }
-/* line 53, ../scss/_main.scss */
+/* line 73, ../scss/_main.scss */
 blockquote p:last-of-type {
   margin: 0;
 }
 
-/* line 58, ../scss/_main.scss */
-ul {
+/* line 78, ../scss/_main.scss */
+.pullquotes {
+  font-size: 1.5em;
   margin-bottom: 2em;
 }
 
-/* line 62, ../scss/_main.scss */
+/* line 83, ../scss/_main.scss */
+ul {
+  margin-bottom: 1.5em;
+}
+
+/* line 87, ../scss/_main.scss */
 li {
   margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+/* line 92, ../scss/_main.scss */
+.divider {
+  color: rgba(60, 60, 60, 0.7);
+  text-align: center;
+  margin: 2em auto 1.5em;
 }
 
 /*-- MEDIA QUERIES -- */
