@@ -5,10 +5,52 @@ Primary style
 -------------------------------- */
 
 #main {
-	max-width: 580px;
-	margin: 0 auto;
+	section{
+		max-width: 580px;
+		margin: 0 auto;
+	}
+
+	.lede {
+		width: 100%;
+	}
 }
 
-.blockquote_convo {
-	font-size: 0.875em;
+header {
+	margin: 0 auto 2em;
+	max-width: 580px;
+}
+
+.lede-img {
+	width: 100%;
+	// background: #ccc;
+
+	background: url("../img/2012_MCDHOBB_EC019_H.jpg") no-repeat 0 30%;
+	background-size: cover;
+	min-height: 450px;
+}
+
+blockquote {
+	font-size: 0.9em;
+	margin: 2em 0;
+	padding: 2em;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	background-color: rgba($black, 0.1);
+	// font-family: $tiempos-semibold;
+
+	em {
+
+	}
+
+	p:last-of-type  {
+		margin: 0;
+	}
+}
+
+ul {
+	margin-bottom: 2em;
+}
+
+li {
+	margin-bottom: 0.5em;
 }

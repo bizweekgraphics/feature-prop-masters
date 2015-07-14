@@ -25,6 +25,7 @@ h1 {
   font-size: 4rem;
   line-height: 1.1em;
   // text-align: center;
+  margin-bottom: 0.1em;
 }
 
 h2 {
@@ -33,6 +34,10 @@ h2 {
 
 p {
   margin: 0 0 $base-spacing;
+}
+
+em {
+  font-family: $tiempos-italic;
 }
 
 a {
