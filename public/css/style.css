@@ -295,13 +295,14 @@ header {
 
 /* line 32, ../scss/_main.scss */
 .caption {
-  font-size: 0.8em;
+  font-size: 0.7em;
+  font-family: "NHaasGroteskDSPro-55Rg", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
   color: rgba(60, 60, 60, 0.6);
   text-align: right;
   margin-right: 0.325em;
 }
 
-/* line 39, ../scss/_main.scss */
+/* line 40, ../scss/_main.scss */
 blockquote {
   font-size: 0.9em;
   margin: 2em 0;
@@ -310,17 +311,17 @@ blockquote {
   border-bottom: 1px solid #eee;
   background-color: rgba(60, 60, 60, 0.1);
 }
-/* line 52, ../scss/_main.scss */
+/* line 53, ../scss/_main.scss */
 blockquote p:last-of-type {
   margin: 0;
 }
 
-/* line 57, ../scss/_main.scss */
+/* line 58, ../scss/_main.scss */
 ul {
   margin-bottom: 2em;
 }
 
-/* line 61, ../scss/_main.scss */
+/* line 62, ../scss/_main.scss */
 li {
   margin-bottom: 0.5em;
 }
