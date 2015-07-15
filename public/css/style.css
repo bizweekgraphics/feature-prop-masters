@@ -271,19 +271,20 @@ picture {
 Primary style
 
 -------------------------------- */
-/* line 8, ../scss/_main.scss */
-#main section {
+/* line 7, ../scss/_main.scss */
+.content {
   max-width: 700px;
   margin: 0 auto;
 }
-/* line 13, ../scss/_main.scss */
-#main .lede {
+
+/* line 12, ../scss/_main.scss */
+.lede {
   width: 100%;
   position: relative;
   margin-bottom: 1em;
 }
 
-/* line 20, ../scss/_main.scss */
+/* line 18, ../scss/_main.scss */
 header {
   margin: 0 auto 2rem;
   position: absolute;
@@ -293,12 +294,12 @@ header {
   width: 40%;
 }
 
-/* line 31, ../scss/_main.scss */
+/* line 29, ../scss/_main.scss */
 video {
   width: 100%;
 }
 
-/* line 35, ../scss/_main.scss */
+/* line 33, ../scss/_main.scss */
 .video {
   width: 100%;
   margin-bottom: 2em;
@@ -306,15 +307,15 @@ video {
   height: 460px;
 }
 
-/* line 42, ../scss/_main.scss */
+/* line 40, ../scss/_main.scss */
 .lede-img {
   width: 100%;
   background-size: cover;
   min-height: 450px;
 }
 
-/* line 51, ../scss/_main.scss */
-.caption {
+/* line 49, ../scss/_main.scss */
+figcaption, .caption {
   font-size: 0.7em;
   font-family: "NHaasGroteskDSPro-55Rg", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
   color: rgba(60, 60, 60, 0.6);
@@ -322,55 +323,55 @@ video {
   margin-right: 0.325em;
 }
 
-/* line 59, ../scss/_main.scss */
+/* line 57, ../scss/_main.scss */
 blockquote {
   font-size: 0.9em;
   margin: 2em 0;
   padding: 2em;
   background-color: rgba(60, 60, 60, 0.05);
 }
-/* line 72, ../scss/_main.scss */
+/* line 70, ../scss/_main.scss */
 blockquote p:last-of-type {
   margin: 0;
 }
 
-/* line 77, ../scss/_main.scss */
+/* line 75, ../scss/_main.scss */
 .pullquotes {
   font-size: 1.5em;
-  margin-bottom: 2em;
   position: relative;
+  margin-bottom: 2rem;
 }
-/* line 82, ../scss/_main.scss */
+/* line 85, ../scss/_main.scss */
 .pullquotes::before, .pullquotes::after {
   position: absolute;
   font-size: 3em;
   opacity: 0.2;
 }
-/* line 88, ../scss/_main.scss */
+/* line 91, ../scss/_main.scss */
 .pullquotes::before {
   content: "\201C";
   top: -2rem;
   left: -2.75rem;
 }
-/* line 94, ../scss/_main.scss */
+/* line 97, ../scss/_main.scss */
 .pullquotes::after {
   content: "\201D";
 }
 
-/* line 101, ../scss/_main.scss */
+/* line 104, ../scss/_main.scss */
 ul {
   margin-bottom: 1.5em;
   list-style-type: initial;
   margin-left: 3rem;
 }
 
-/* line 107, ../scss/_main.scss */
+/* line 110, ../scss/_main.scss */
 li {
   margin-bottom: 0.5em;
   font-size: 0.9em;
 }
 
-/* line 112, ../scss/_main.scss */
+/* line 115, ../scss/_main.scss */
 .divider {
   color: rgba(60, 60, 60, 0.7);
   text-align: center;
@@ -380,18 +381,18 @@ li {
 /*-- MEDIA QUERIES -- */
 /* MOBILE */
 @media screen and (max-width: 560px) {
-  /* line 4, ../scss/mediaqueries/_mobile.scss */
-  #main section {
+  /* line 3, ../scss/mediaqueries/_mobile.scss */
+  .content {
     width: 90%;
   }
 
-  /* line 9, ../scss/mediaqueries/_mobile.scss */
+  /* line 7, ../scss/mediaqueries/_mobile.scss */
   header {
     width: 96%;
     margin-bottom: 0.5rem;
   }
 
-  /* line 14, ../scss/mediaqueries/_mobile.scss */
+  /* line 12, ../scss/mediaqueries/_mobile.scss */
   .subhed {
     color: rgba(255, 255, 255, 0.9);
     display: inline-block;
@@ -399,7 +400,7 @@ li {
     font-size: 0.9rem;
   }
 
-  /* line 21, ../scss/mediaqueries/_mobile.scss */
+  /* line 19, ../scss/mediaqueries/_mobile.scss */
   h1 {
     font-size: 1.8rem;
     background-color: rgba(60, 60, 60, 0.5);
