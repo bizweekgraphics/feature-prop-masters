@@ -1,6 +1,25 @@
 /* MOBILE */
 @media screen and (max-width: 560px) {
 	#main {
-		width: 90%;
+		section{
+			width: 90%;
+		}
+	}
+
+	header {
+		width: 96%;
+		margin-bottom: 0.5rem;
+	}
+
+	.subhed {
+		color: rgba($base-background-color, 0.9);
+		display: inline-block;
+		background-color: rgba($black, 0.5);
+		font-size: 0.9rem;
+	}
+
+	h1 {
+		font-size: 1.8rem;
+		background-color: rgba($black, 0.5);
 	}
 }
