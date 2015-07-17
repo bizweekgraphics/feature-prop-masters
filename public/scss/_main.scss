@@ -5,8 +5,9 @@ Primary style
 -------------------------------- */
 
 .content {
-	max-width: 700px;
+	width: 100%;
 	margin: 0 auto;
+	@include clearfix;
 }
 
 .lede {
@@ -16,34 +17,43 @@ Primary style
 }
 
 header {
-	margin: 0 auto 2rem;
-	// max-width: 580px;
-	position: absolute;
-	right: 2%;
-	bottom: 3%;
-	text-align: right;
-	width: 40%;
+	margin: 0 auto;
+	max-width: 800px;
+    // width: 60%;
+}
 
+.dek {
+	font-family: $NHaas;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	margin: 0.5em 0;
+	padding: 0;
+	text-align: left;
+}
+
+.subhed {
+	margin-bottom: 1.5em;
+
+	color: rgba($black, 0.75);
 }
 
 video {
-	width: 100%;
+	width: 90%;
+	display: block;
+	max-width: 1280px;
+	margin: 0 auto 2rem;
+
+	.lede & {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
-.video {
+.video-js {
+	margin: 0 auto 3em;
+	min-width: 1280px;
 	width: 100%;
-	margin-bottom: 2em;
-	background-color: pink;
-	height: 460px;
-}
-
-.lede-img {
-	width: 100%;
-	// background: #ccc;
-
-	// background: url("../img/2012_MCDHOBB_EC019_H.jpg") no-repeat 0 30%;
-	background-size: cover;
-	min-height: 450px;
+	min-height: 640px;
 }
 
 figcaption, .caption {
@@ -51,69 +61,97 @@ figcaption, .caption {
 	font-family: $NHaas;
 	color: rgba($black, 0.6);
 	text-align: right;
+}
+
+figcaption {
 	margin-right: 0.325em;
+}
+
+.caption {
+	width: 90%;
+	margin: -2em auto 2em;
+	max-width: 1280px;
+}
+
+.img_full {
+	width: 90%;
+	max-width: 1280px;
+	margin: 0 auto 3rem;
+}
+
+.img_left, .img_right {
+	width: 38rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+}
+
+.img_left {
+	float: left;
+}
+
+.img_right {
+	float: right;
 }
 
 blockquote {
 	font-size: 0.9em;
-	margin: 2em 0;
+	margin: 2em auto;
 	padding: 2em;
-	// border-top: 1px solid rgba($black, 0.2);
-	// border-bottom: 1px solid rgba($black, 0.2);
-	background-color: rgba($black, 0.05);
-	// font-family: $tiempos-semibold;
+	width: 76%;
 
 	em {
 
 	}
 
 	p:last-of-type  {
-		margin: 0;
+		margin-bottom: 0;
 	}
 }
 
 .pullquotes {
-	font-size: 1.5em;
+	font-size: 1.75em;
+	line-height: 3rem;
 	position: relative;
-	// float: left;
-	// width: 58%;
-	// line-height: 2.5rem;
-	margin-bottom: 2rem;
-	// margin-left: -8rem;
-	// padding-right: 2rem;
-
-	&::before, &::after {
-		position: absolute;
-	    font-size: 3em;
-	    opacity: 0.2;
-	}
-
-	&::before {
-		content: "\201C";
-		top: -2rem;
-	    left: -2.75rem;
-	}
-
-	&::after {
-		content:"\201D";
-		// bottom: -2rem;
-	    // right: -2.75rem;
-	}
+	width: 58%;
+	max-width: 48rem;
+	margin: 1.5em auto;
+	color: $quote-color;
+	padding: 1.25em 0;
+	border-top: 1px solid rgba($black, 0.1);
+	border-bottom: 1px solid rgba($black, 0.1);
+	text-align: center;
+	font-family: $tiempos-semibold;
 }
 
-ul {
-	margin-bottom: 1.5em;
-	list-style-type:initial;
-	margin-left: 3rem;
-}
+#main {
+	ul {
+		margin: 0 auto 1.5em;
+		list-style-type: initial;
+		width: 24%;
+	}
 
-li {
-	margin-bottom: 0.5em;
-	font-size: 0.9em;
+	li {
+		margin-bottom: 0.5em;
+		font-size: 0.9em;
+	}
 }
 
 .divider {
-	color: rgba($black, 0.7);
+	color: rgba($black, 0.3);
 	text-align: center;
 	margin: 2em auto 1.5em;
+
+	span {
+		font-family: $NHaas;
+		font-size:0.7em;
+	}
+}
+
+.line {
+  height: 2px;
+  background-color: rgba(0,0,0, 0.1);
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+  margin: 0 1rem;
 }

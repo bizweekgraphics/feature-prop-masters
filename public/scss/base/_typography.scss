@@ -1,11 +1,11 @@
 body {
-  @include font-feature-settings("kern", "liga", "pnum");
-  -webkit-font-smoothing: antialiased;
-  color: $base-font-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  // position: relative;
+    @include font-feature-settings("kern", "liga", "pnum");
+    -webkit-font-smoothing: antialiased;
+    color: $base-font-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    // position: relative;
 }
 
 h1,
@@ -14,51 +14,43 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
-  // font-size: $base-font-size;
-  line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
-  // font-weight: normal;
+    font-family: $heading-font-family;
+    line-height: $heading-line-height;
+    margin: 0 0 $small-spacing;
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 1.1em;
-  // text-align: center;
-  margin-bottom: 0.1em;
-  color: rgba($base-background-color, 0.9);
-  background-color: rgba($black, 0.3);
-  display: inline;
-}
-
-h2 {
-  // margin-top: 4em;
+    font-size: 4rem;
+    line-height: 1.1em;
+    margin-bottom: 0.1em;
+    color: $quote-color;
 }
 
 p {
-  margin: 0 0 $base-spacing;
-}
+    margin: 0 auto $base-spacing;
+    max-width: 800px;
+    // width: 60%;
+    }
 
 em {
-  font-family: $tiempos-italic;
+    font-family: $tiempos-italic;
 }
 
 a {
-  color: $action-color;
-  // text-decoration: none;
-  text-decoration: underline;
-  transition: color 0.1s linear;
+    color: $action-color;
+    text-decoration: underline;
+    transition: color 0.1s linear;
 
-  &:active,
-  &:focus,
-  &:hover {
+    &:active,
+    &:focus,
+    &:hover {
     color: darken($action-color, 15%);
-  }
+    }
 
-  &:active,
-  &:focus {
+    &:active,
+    &:focus {
     outline: none;
-  }
+    }
 }
 
 hr {
